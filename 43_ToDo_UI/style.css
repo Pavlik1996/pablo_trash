@@ -1,0 +1,83 @@
+body {
+  height: 90vh;
+  font-family: "Source Sans Pro", sans-serif;
+  background: linear-gradient(70deg, #b9d9f7, #a6fcdb);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.low {
+  margin-top: 25px;
+}
+
+h1 {
+  color: rgba(39, 59, 175, 0.514);
+}
+
+.blokUs {
+  font-weight: 600;
+  padding: 5px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 2px;
+}
+
+.blokUs label {
+  width: 435px;
+  display: flex;
+  word-wrap: break-word;
+}
+
+.blokUs input {
+  margin-right: 10px;
+}
+
+.blokadd {
+  padding: 5px;
+  display: flex;
+  border: 1px solid rgba(0, 0, 0, 0.233);
+  border-radius: 6px;
+  margin-bottom: 8px;
+  box-shadow: 1px 1px 2px;
+}
+
+.blokadd input {
+  margin-left: 25px;
+  border: 0px;
+  outline: none;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.blokadd label {
+  width: 435px;
+  display: flex;
+}
+
+input:checked + span {
+  text-decoration: line-through;
+  color: rgba(0, 0, 0, 0.486);
+}
+
+.todoall {
+  background: linear-gradient(145deg, #f4fbff, #d8ffe8);
+  margin-top: 40px;
+  border-radius: 15px;
+  width: 475px;
+  padding: 15px;
+  box-shadow: 10px 10px 5px #808080;
+  user-select: none;
+}
+
+.priority {
+  display: flex;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 21px;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.788);
+}

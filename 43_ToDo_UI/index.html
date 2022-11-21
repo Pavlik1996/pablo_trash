@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo UI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="todoall">
+      <div class="high">
+        <p class="priority">HIGH</p>
+        <form class="form_high">
+          <div class="blokadd">
+            <label for="task1">
+              <input
+                class="input-high"
+                type="text"
+                id="task1"
+                placeholder="Добавить важных дел"
+                required
+              />
+            </label>
+            <button type="submit" class="button">+</button>
+          </div>
+        </form>
+      </div>
+      <div class="low">
+        <p class="priority">LOW</p>
+        <form class="form_low">
+          <div class="blokadd">
+            <label for="task2">
+              <input
+                class="input-low"
+                type="text"
+                id="task2"
+                placeholder="Добавить важных дел"
+                required
+              />
+            </label>
+            <button type="submit" class="button">+</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
