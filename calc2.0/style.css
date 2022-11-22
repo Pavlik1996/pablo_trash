@@ -1,0 +1,110 @@
+body {
+  height: 100vh;
+  background: linear-gradient(70deg, #8bc7ff, #befca6);
+  font-family: sans-serif;
+}
+
+.calc {
+  margin: 50px auto;
+  width: 270px;
+  height: 400px;
+  border-radius: 8px;
+  background: linear-gradient(#1a1a1a, #5f5f5f);
+  color: aliceblue;
+  padding: 18px;
+  box-shadow: 20px 20px 30px #2e2e2e;
+}
+
+.calc-display {
+  height: 100px;
+  padding: 10px;
+  padding-bottom: 30px;
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  background: radial-gradient(rgb(252, 255, 237), #b6be6c);
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.calc-display p {
+  justify-self: top;
+  color: #052206;
+  font-size: 3rem;
+  margin: 0;
+  user-select: none;
+}
+
+.buttons {
+  margin-top: 20px;
+  display: grid;
+  grid-template:
+    "plus-minux ac percent division"
+    "seven eight nine multi"
+    "four five six minus"
+    "dot two three zero"
+    "one one plus zero";
+  grid-gap: 7px;
+  justify-items: center;
+}
+
+.btn {
+  width: 60px;
+  height: 40px;
+  background: radial-gradient(at top, #5e5e5e, #000000);
+  border: 0.1ex solid #000;
+  border-radius: 8px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.2em;
+  cursor: pointer;
+  user-select: none;
+  box-shadow: 2px 2px 2px #000;
+  transition: 0.1s;
+}
+
+.btn.zero {
+  grid-area: one;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn.equal {
+  grid-area: zero;
+  height: 95%;
+  border-radius: 8px;
+  justify-content: end;
+  line-height: 100px;
+}
+.btn.minus.bg-brow {
+  font-size: 2em;
+  line-height: 35px;
+}
+
+.btn:hover {
+  filter: brightness(135%);
+  transition: 0.2s;
+}
+
+.btn:active {
+  transition: 0.1s;
+  background: radial-gradient(at center, #000, #5e5e5e);
+  box-shadow: 0px 0px 0px #202020;
+  transition: 0.2s;
+}
+.btn.btn.bg-brow:active {
+  background: radial-gradient(at center, #72574e, #c0b3ad);
+}
+
+.btn.bg-brow {
+  background: linear-gradient(#c0b3ad, #5e4e40);
+}
+
+.btn.bg-orange {
+  background: linear-gradient(#ffcfa7, #ff7b00);
+  text-align: center;
+  font-size: 1.3em;
+}
+.btn.bg-orange:active {
+  background: linear-gradient(#f3af78, #6e3500);
+}
